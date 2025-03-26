@@ -52,7 +52,7 @@ const Sidebar = () => {
               Check out our documentation for more information on using the dashboard.
             </p>
             <a
-              href="#"
+              href="/documentation" // Changed from "#" to a valid URL
               className="text-xs font-medium text-primary-600 hover:text-primary-700"
             >
               View Documentation →
