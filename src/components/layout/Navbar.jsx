@@ -55,9 +55,15 @@ const Navbar = () => {
         <div className="flex items-center">
           <div className="flex items-center">
             {/* Replace external placeholder with inline SVG */}
-            <div className="h-8 w-8 mr-3 flex items-center justify-center bg-primary-600 text-white rounded-md">
-              AR
-            </div>
+            <img 
+              src="/logo.svg" 
+              alt="Algo Root Logo" 
+              className="w-8 h-8"
+              onError={(e) => {
+                e.target.onerror = null; 
+                e.target.src = 'https://via.placeholder.com/64?text=AR';
+              }}
+            />
             <span className="text-xl font-display font-semibold text-secondary-900">
               Algo Root
             </span>
